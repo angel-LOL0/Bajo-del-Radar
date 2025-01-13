@@ -59,7 +59,7 @@ const Slider: React.FC = () => {
 
   return (
     <div className="container px-4 py-16 mx-auto">
-      <h2 className="mb-8 text-3xl font-semibold text-center">
+      <h2 className="mb-8 text-3xl font-semibold text-center dark:text-white">
         Publicaciones Recientes
       </h2>
       <div className="relative w-full max-w-3xl mx-auto">

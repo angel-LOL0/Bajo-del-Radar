@@ -42,14 +42,14 @@ const posts: Post[] = [
 const FeaturedPosts: React.FC = () => {
   return (
     <div className="container px-4 py-16 mx-auto">
-      <h2 className="mb-8 text-3xl font-semibold text-center">
+      <h2 className="mb-8 text-3xl font-semibold text-center dark:text-white">
         Publicaciones Destacadas
       </h2>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {posts.map((post) => (
           <div
             key={post.id}
-            className="overflow-hidden transition-shadow duration-300 bg-white border rounded-lg shadow-lg hover:shadow-xl"
+            className="overflow-hidden transition-shadow duration-300 bg-white border rounded-lg shadow-lg dark:bg-darkTertiary hover:shadow-xl"
           >
             <img
               src={post.imageUrl}
@@ -57,8 +57,12 @@ const FeaturedPosts: React.FC = () => {
               className="object-cover w-full h-48"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold">{post.title}</h3>
-              <p className="mt-2 text-gray-600">{post.excerpt}</p>
+              <h3 className="text-xl font-semibold dark:text-darkFourth">
+                {post.title}
+              </h3>
+              <p className="mt-2 text-gray-600 dark:text-white">
+                {post.excerpt}
+              </p>
               <a
                 href={post.link}
                 className="inline-block mt-4 text-blue-500 transition-colors hover:text-blue-700"
