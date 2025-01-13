@@ -62,10 +62,10 @@ const ButtonTheme: React.FC = () => {
           className={`w-10 h-10 flex items-center justify-center rounded-lg transition-colors 
             ${
               theme === item.text
-                ? "bg-sky-600 text-white"
-                : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                ? "bg-lightTertiary dark:bg-darkSecondary text-white"
+                : "bg-gray-200 dark:bg-darkTertiary text-gray-800 dark:text-gray-200"
             } 
-            hover:bg-sky-500 dark:hover:bg-sky-500`}
+            hover:bg-sky-300 dark:hover:bg-darkFourth`}
         >
           {item.icon}
         </button>

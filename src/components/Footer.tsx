@@ -2,16 +2,17 @@ import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
-
   const year = new Date().getFullYear();
 
   return (
-    <footer className="py-8 mt-12 text-gray-600 bg-white shadow-md body-font dark:bg-gray-900">
+    <footer className="py-8 text-gray-600 shadow-md dark:text-[#D9D9D9] bg-lightTertiary body-font dark:bg-gray-900">
       <div className="px-6 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Sección de Enlaces */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Enlaces rápidos</h3>
+            <h3 className="mb-4 text-lg font-semibold text-lightPrimary dark:text-darkFourth">
+              Enlaces rápidos
+            </h3>
             <ul>
               <li>
                 <a href="#" className="hover:text-blue-400">
@@ -38,7 +39,9 @@ const Footer: React.FC = () => {
 
           {/* Sección de Redes Sociales */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Síguenos</h3>
+            <h3 className="mb-4 text-lg font-semibold text-lightPrimary dark:text-darkFourth">
+              Síguenos
+            </h3>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -65,16 +68,20 @@ const Footer: React.FC = () => {
           </div>
           {/* Sección de Derechos */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Sobre el Blog</h3>
+            <h3 className="mb-4 text-lg font-semibold text-lightPrimary dark:text-darkFourth">
+              Sobre el Blog
+            </h3>
             <p className="text-sm">
-              Blog personal sobre tecnología, desarrollo web y otros temas
-              interesantes. &copy; {year}
+              Blog dedicado sobre periodismo e informal sobre diferentes casos y
+              temas del mundo criminal y otros temas controversial que ocurre
+              debajo de nuestras narices sin darnos cuentas. <br /> &copy;{" "}
+              {year}
             </p>
           </div>
         </div>
         {/* Línea de separación */}
-        <div className="pt-4 mt-8 text-sm text-center border-t border-gray-700 dark:border-white">
-          <p>&copy; {year} Mi Blog. Todos los derechos reservados.</p>
+        <div className="pt-4 mt-8 text-sm text-center border-t border-gray-700 text-lightPrimary dark:text-darkFourth dark:border-white">
+          <p>&copy; {year} Bajo del Radar. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

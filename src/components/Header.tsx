@@ -3,7 +3,7 @@ import ButtonTheme from "./ButtonTheme";
 
 const Header: React.FC = () => {
   return (
-    <header className="text-gray-600 bg-white shadow-md body-font dark:bg-gray-900">
+    <header className="fixed top-0 left-0 z-[100] w-full text-gray-600 dark:text-white bg-lightPrimary shadow-md body-font dark:bg-gray-900">
       <div className="container flex flex-col flex-wrap items-center justify-between p-5 mx-auto md:flex-row">
         {/* Logo */}
         <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
@@ -29,6 +29,6 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

@@ -71,7 +71,7 @@ const Layout: React.FC<LayoutProps> = ({
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="mt-20 dark:bg-[#121212]">{children}</main>
       <Footer />
     </>
   );
