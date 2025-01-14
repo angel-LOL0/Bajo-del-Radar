@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import React, { useEffect, useState } from "react";
+import KonamiCodeReveal from "./Konami";
 
 interface LayoutProps {
   title: string;
@@ -71,7 +72,8 @@ const Layout: React.FC<LayoutProps> = ({
   return (
     <>
       <Header />
-      <main className="mt-20 dark:bg-[#121212]">{children}</main>
+      <KonamiCodeReveal />
+      <main className="md:mt-20 mt-36 dark:bg-[#121212]">{children}</main>
       <Footer />
     </>
   );
